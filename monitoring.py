@@ -1,7 +1,6 @@
 import psutil
-import re
 
-class active_connections:
+class ActiveConnections:
     def __init__(self):
         self.connections = self.show_all_connections()
 
@@ -17,10 +16,10 @@ class active_connections:
         
         return all_connection
 
-    def show_active_connections(connections):
+    def show_active_connections(self):
         active_connections = []
-        for con in connections : 
-            if re.search("ESTABLISHED",con):
+        for con in self.connections : 
+            if "ESTABLISHED" in con:
                 active_connections.append(con)
         return active_connections
 
