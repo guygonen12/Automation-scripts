@@ -23,10 +23,13 @@ class ActiveConnections:
                 active_connections.append(con)
         return active_connections
 
+'''
 monitor = ActiveConnections()
 all_conn = monitor.show_all_connections()
 active_conn = monitor.show_active_connections()
 
 print("All Connections:", all_conn)
 print("Active Connections:", active_conn)
+'''
+
 
