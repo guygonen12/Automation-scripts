@@ -4,7 +4,7 @@ import logging
 import re
 import time
 
-'''
+
 class ActiveConnections:
     def __init__(self):
         self.connections = self.show_all_connections()
@@ -35,7 +35,7 @@ active_conn = monitor.show_active_connections()
 
 print("All Connections:", all_conn)
 print("Active Connections:", active_conn)
-'''
+
 
 class DetectingUnauthorizedConnections : 
     def __init__(self):
